@@ -1,8 +1,7 @@
 class WebPush:
-
     optin = False
 
-    def __init__(self,platform, optin, global_frequency_capping, start_date, end_date, language, push_type):
+    def __init__(self, platform, optin, global_frequency_capping, start_date, end_date, language, push_type):
         self.platform = platform
         self.optin = optin
         self.global_frequency_capping = global_frequency_capping
@@ -14,6 +13,5 @@ class WebPush:
         if not isinstance(optin, bool):
             raise ValueError("optin sadece boolean değer alabilir")
 
-
-    def send_push(self):
-        print(self.push_type , "Push Gönderildi!")
+    def sendPush(self):
+        print(self.push_type, "Push Gönderildi!")

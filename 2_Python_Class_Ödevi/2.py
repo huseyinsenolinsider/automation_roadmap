@@ -1,4 +1,4 @@
-class insan:
+class Insan:
     def __init__(self):
         self.ad = "ad"
         self.soyad = "soyad"
@@ -14,7 +14,7 @@ class insan:
         self.yetenekler.append(yetenek)
 
 
-x = insan()
+x = Insan()
 x.ad = "hüseyin"
 x.yas = 29
 x.yetenek_ekle("python")
